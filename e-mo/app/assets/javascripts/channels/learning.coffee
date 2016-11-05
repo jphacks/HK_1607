@@ -5,6 +5,7 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
   disconnected: ->
     # Called when the subscription has been terminated by the server
 
+  # TODO 処理をメソッドに分けていく
   received: (data) ->
     console.log(data)
     if data["connected_count"] >= 0
@@ -14,7 +15,27 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
     else if data["expression_data"]
       # console.log("表情の値")
 
-      # TODO 値に応じてグラフの描写と画像の置き換え
+      # jsonオブジェクトに変換
+      expressionAsJson = $.parseJSON(data["expression_data"])
+
+      # TODO smile他のデータから平均値を算出してexpressionを生成
+      expression = expressionAsJson.smile
+
+      # TODO 画像の置き換え, herokuで動くか心配
+      imgPath = "assets/"
+      if expression > 80
+        imgPath += "80_.png"
+      else if expression > 60
+        imgPath += "60_.png"
+      else if expression > 40
+        imgPath += "40_.png"
+      else if expression > 20
+        imgPath += "20_.png"
+      else
+        imgPath += "0_.png"
+      $(".expression-img").attr("src", imgPath)
+
+      # TODO グラフの描写
       return
     else
       # console.log("メッセージ受信")
