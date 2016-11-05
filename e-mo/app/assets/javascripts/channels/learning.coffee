@@ -8,10 +8,17 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
   received: (data) ->
     console.log(data)
     if data["connected_count"] >= 0
+      # console.log("接続数の情報")
       $(".connected-count").text(data["connected_count"])
       return
+    else if data["expression_data"]
+      # console.log("表情の値")
+
+      # TODO 値に応じてグラフの描写と画像の置き換え
+      return
     else
-      # #messagesに受信したmessageをセット
+      # console.log("メッセージ受信")
+      # messagesに受信したmessageをセット
       $li = '<li class="media message list-item">
         <div class="media-body">
         <h5 class="media-heading">

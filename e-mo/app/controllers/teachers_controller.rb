@@ -10,6 +10,8 @@ class TeachersController < ApplicationController
   # FaceTrackingアプリでのPOST送信先
   def expression_data
     p "スマイルデータ： #{params['smileData']}"
+    expression_json = {smile: params["smileData"]}.to_json
+    SendExpressionDataJob.perform_later(expression_json)
     head 200
   end
 
