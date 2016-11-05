@@ -1,2 +1,25 @@
-<h1>Teachers#index</h1>
-<p>Find me in app/views/teachers/index.html.erb</p>
+<% provide(:title, "teacher") %>
+
+<article>
+  <div class="container">
+    <div class="media">
+      <div class="media-body">
+        <%= image_tag "logo.png", class: "media-object" %>
+        <div class="media-heading">
+          <h3>接続数</h3>
+          <strong class="text-red connected-count" style="font-size: 24px">0</strong><strong class="text-red" style="font-size: 14px"> 人</strong>
+        </div>
+        <div class="media-heading">
+          <h3>理解度</h3>
+          <strong class="text-red" style="font-size: 48px">80.3<span style="font-size: 14px">%</span></strong>
+        </div>
+      </div>
+      <div class="media-right">
+        <%= image_tag "40_.png", class: "media-object expression-img" %>
+      </div>
+    </div>
+
+    <div id="graph"></div>
+    <ul class="media-list scroll-box" id="messages"></ul>
+  </div>
+</article>
