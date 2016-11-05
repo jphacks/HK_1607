@@ -5,7 +5,10 @@ class TeachersController < ApplicationController
   protect_from_forgery except: [:expression_data]
 
   def index
-    @chart_data = {a: 99, b: 56, c: 82, d: 48, e: 33, f: 26, g: 70}
+    @chart_data = []
+    50.times do |i|
+      @chart_data.push([i, rand * 100])
+    end
   end
 
   # FaceTrackingアプリでのPOST送信先

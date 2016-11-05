@@ -20,11 +20,13 @@ class LearningChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-    # 自分宛てにメッセージ送信
-    LearningChannel.broadcast_to(User.find(3), {
-      student_name: current_user.student_name, message: data["message"], time: Time.now.strftime("%Y年%m月%d日 %H時%M分%S秒")
-    })
     # 先生宛てにメッセージ送信
+    User.where(teacher_flag: true).each do |teacher|
+      LearningChannel.broadcast_to(teacher, {
+        student_name: current_user.student_name, message: data["message"], time: Time.now.strftime("%Y年%m月%d日 %H時%M分%S秒")
+      })
+    end
+    # 自分宛てにメッセージ送信
     LearningChannel.broadcast_to(current_user, {
       student_name: current_user.student_name, message: data["message"], time: Time.now.strftime("%Y年%m月%d日 %H時%M分%S秒")
     })

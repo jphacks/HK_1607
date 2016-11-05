@@ -3,8 +3,10 @@ class ConnectCountJob < ApplicationJob
 
   def perform
     # 先生宛てで生徒の接続数を通知
-    LearningChannel.broadcast_to(User.find(3), {
-      connected_count: User.where(connected_flag: true).count
-    })
+    User.where(teacher_flag: true).each do |teacher|
+      LearningChannel.broadcast_to(teacher, {
+        connected_count: User.where(connected_flag: true).count
+        })
+    end
   end
 end
