@@ -1,6 +1,10 @@
-RRails.application.routes.draw do
-  resources :users
+Rails.application.routes.draw do
+  root 'student#index'
+
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+
   get 'student' => 'students#index'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :users
 end
