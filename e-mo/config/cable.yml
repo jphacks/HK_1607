@@ -5,4 +5,5 @@ test:
   adapter: async
 
 production:
+  # HerokuにRedis導入していないためここを修正しないとHerokuでwebsocket通信が行えない
   adapter: async
