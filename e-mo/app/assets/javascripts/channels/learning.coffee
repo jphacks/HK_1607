@@ -19,9 +19,8 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
       expressionAsJson = $.parseJSON(data["expression_data"])
 
       # TODO smile他のデータから平均値を算出してexpressionを生成
-      expression = expressionAsJson.smile
+      expression = parseInt(expressionAsJson.smile)
 
-      # TODO 画像の置き換え, herokuで動くか心配
       imgPath = "assets/"
       if expression > 80
         imgPath += "80_.png"
@@ -36,6 +35,8 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
       $(".expression-img").attr("src", imgPath)
 
       # TODO グラフの描写
+
+      $(".expression-avg").text(expression.toFixed(1))
       return
     else
       # console.log("メッセージ受信")
