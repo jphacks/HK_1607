@@ -10,7 +10,6 @@ module ApplicationCable
 
       # カレントユーザが先生ではない場合(生徒だった場合)
       if !self.current_user.teacher_flag
-        p "はいはいはい！！"
         # ユーザの接続フラグをオンに
         user_connected
         # 接続数の通知

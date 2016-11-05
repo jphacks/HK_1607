@@ -21,7 +21,7 @@ class LearningChannel < ApplicationCable::Channel
 
   def speak(data)
     # 自分宛てにメッセージ送信
-    LearningChannel.broadcast_to(User.find(1), {
+    LearningChannel.broadcast_to(User.find(3), {
       student_name: current_user.student_name, message: data["message"], time: Time.now.strftime("%Y年%m月%d日 %H時%M分%S秒")
     })
     # 先生宛てにメッセージ送信
