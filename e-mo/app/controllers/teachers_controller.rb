@@ -20,9 +20,11 @@ class TeachersController < ApplicationController
   def expression_data
     # サーバデバッグ用出力
     p "スマイルデータ: #{params['smileData']}"
+    # TODO 表情の値から理解度の算出
+    
     # クライアントへの送信用にJSONオブジェクトを生成
     expression_json = {smile: params["smileData"]}.to_json
-    # 表情の値を先生宛てで送信
+    # 理解度の値を先生宛てで送信
     SendExpressionDataJob.perform_later(expression_json)
     # 画面の生成、遷移が行われないためレスポンスコードのみ返す
     head 200
