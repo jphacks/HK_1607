@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
 
   get 'student' => 'students#index'
+  get 'teacher' => 'teachers#index'
 
   resources :users
 end

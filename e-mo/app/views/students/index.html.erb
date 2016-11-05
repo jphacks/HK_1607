@@ -6,7 +6,7 @@
 
 <div class="navbar-fixed-bottom">
   <form class="input-group" id="send-message-form">
-    <label id="send-user-name" class="input-group-addon">ユーザ名</label>
+    <label id="send-user-name" class="input-group-addon"><%= current_user.student_name %></label>
     <input type="text" data-behavior="learning_speaker" class="form-control" placeholder="ここにメッセージを入力">
   </form>
 </div>
