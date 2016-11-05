@@ -1,0 +1,38 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.expression-img {
+  width: 220px;
+  height: 220px;
+  margin-top: 30px;
+}
+
+.text-red {
+  color: red;
+  margin-left: 60px;
+}
+
+.student-name {
+  color: blue;
+}
+
+ul.scroll-box {
+  height: 12em;
+  overflow: scroll;
+  border: green 1px solid;
+}
+
+.my-send-messages {
+  padding-bottom: 20px;
+}
+
+#graph {
+  height: 210px;
+  width: 100%;
+}
+
+a.start-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}

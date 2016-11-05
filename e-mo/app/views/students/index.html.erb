@@ -1,2 +1,12 @@
-<h1>Students#index</h1>
-<p>Find me in app/views/students/index.html.erb</p>
+<% provide(:title, "student") %>
+<div class="container">
+  <a href="face:" class="btn btn-primary start-button">FaceTracking Start</a>
+  <ul class="media-list my-send-messages scroll-box" id="messages"></ul>
+</div>
+
+<div class="navbar-fixed-bottom">
+  <form class="input-group" id="send-message-form">
+    <label id="send-user-name" class="input-group-addon">ユーザ名</label>
+    <input type="text" data-behavior="learning_speaker" class="form-control" placeholder="ここにメッセージを入力">
+  </form>
+</div>
