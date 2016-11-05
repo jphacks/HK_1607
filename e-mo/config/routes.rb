@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'student#index'
+  root 'students#index'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
