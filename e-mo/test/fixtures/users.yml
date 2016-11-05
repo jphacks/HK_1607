@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  login_id: MyString
+  student_name: MyString
+  password: MyString
+  connected_flag: false
+  teacher_flag: false
+  admin_flag: false
+
+two:
+  login_id: MyString
+  student_name: MyString
+  password: MyString
+  connected_flag: false
+  teacher_flag: false
+  admin_flag: false

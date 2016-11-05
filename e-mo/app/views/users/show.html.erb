@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @user.login_id %>
+</p>
+
+<p>
+  <strong>Student name:</strong>
+  <%= @user.student_name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>Connected flag:</strong>
+  <%= @user.connected_flag %>
+</p>
+
+<p>
+  <strong>Teacher flag:</strong>
+  <%= @user.teacher_flag %>
+</p>
+
+<p>
+  <strong>Admin flag:</strong>
+  <%= @user.admin_flag %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
