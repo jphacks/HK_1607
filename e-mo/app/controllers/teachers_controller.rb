@@ -1,7 +1,16 @@
 class TeachersController < ApplicationController
   before_action :access_filter
+  skip_before_action :access_filter, only: [:expression_data]
+  skip_before_action :authenticate_user!, only: [:expression_data]
+  protect_from_forgery except: [:expression_data]
 
   def index
+  end
+
+  # FaceTrackingアプリでのPOST送信先
+  def expression_data
+    p "スマイルデータ： #{params['smileData']}"
+    head 200
   end
 
   private
