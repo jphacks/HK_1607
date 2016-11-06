@@ -1,7 +1,9 @@
 # e-mo
 ## 製品概要
 ### e-Tech(education&e-Learning&emotion-Tech）
-
+実行アドレス　https://desolate-basin-88713.herokuapp.com
+セキュリティのためIDとパスワードは別途kskuask・at・gmail.comまでメールをください。・at・を@に変更  
+herokuに課金していないため初回は起動に時間がかかります
 ### 背景（製品開発のきっかけ、課題等）
 e-moというのは、現状のe-Learningに__感情測定システム__と__DeepLearning__を組みこんだもので、  
 生徒全員の感情表現データを集計し、先生にフィードバックすることができるシステムです。  
@@ -107,7 +109,6 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 
 
-
          ・ruby on rails 5.0.0.1  
          ・postgreSQL  
          ・heroku  
@@ -143,7 +144,7 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 カメラを使わない場合、C++ or C#が必要  
 intel Realsense SDKに合わせて  
-C＃でとった値をwebサーバに反映するWebSocketで使えるようにリアルタイムでデータを加工  
+C＃で取得した値をwebサーバに反映するWebSocketで使えるようにリアルタイムでデータを加工  
 
 
 
