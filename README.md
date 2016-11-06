@@ -75,7 +75,6 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 ### 活用した外部技術
 
 #### API・データ
-
 * なし
 
 
@@ -104,7 +103,7 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 
 
-* サーバーサイド
+* バックエンド
 
 
 
