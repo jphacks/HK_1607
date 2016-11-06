@@ -1,4 +1,4 @@
-module ApplicationCable
+modmodule ApplicationCable
   class Connection < ActionCable::Connection::Base
     # コネクションの識別子
     identified_by :current_user
@@ -29,10 +29,8 @@ module ApplicationCable
 
       # ユーザの接続フラグをオンに
       def user_connected
-        p "ユーザ接続！"
         user = User.find(current_user.id)
         user.connected_flag = true
-        p user
         user.save
       end
   end
