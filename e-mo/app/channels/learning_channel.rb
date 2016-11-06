@@ -12,6 +12,7 @@ class LearningChannel < ApplicationCable::Channel
     # 切断したユーザが先生ではない場合(生徒だった場合)
     if !self.current_user.teacher_flag
       # ユーザの接続フラグをオフに
+      p "あれ？？？？"
       user_disconnected
       # 接続数の通知
       ConnectCountJob.perform_later
@@ -35,6 +36,7 @@ class LearningChannel < ApplicationCable::Channel
   protected
     # ユーザの接続フラグをオフに
     def user_disconnected
+      p "ユーザ切断！"
       user = User.find(current_user.id)
       user.connected_flag = false
       user.save

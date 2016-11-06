@@ -1,45 +1,61 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.expression-img {
-  width: 220px;
-  height: 220px;
-  margin-top: 30px;
-}
-
-.text-red {
-  color: red;
-}
-
-.connected-count, .expression-avg {
-  margin-left: 60px;
-}
-
+/* 共通 */
+// チャット履歴出力時の生徒名
 .student-name {
   color: blue;
 }
 
+// チャット履歴表示枠
 ul.scroll-box {
   height: 12em;
   overflow: scroll;
   border: green 1px solid;
 }
 
-.my-send-messages {
-  padding-bottom: 20px;
+// スマホからの文字入力時に画面がアップにならないための記述
+input[type="text"], input[type="password"] {
+  font-size: 16px;
 }
 
+
+
+/* 先生画面 */
+// 顔画像
+.expression-img {
+  width: 220px;
+  height: 220px;
+  margin-top: 30px;
+}
+
+// 理解度、接続数の文字
+.text-red {
+  color: red;
+}
+
+// 理解度、接続数のエリア
+.connected-count, .expression-avg {
+  margin-left: 60px;
+}
+
+// グラフ表示部
 // #graph {
 //   height: 210px;
 //   width: 100%;
 // }
 
+
+
+/* 生徒画面 */
+// チャット表示枠, 画面縦幅を最小にしている時にも最新メッセージが見えるところに置くための記述
+.my-send-messages {
+  padding-bottom: 20px;
+}
+
+// FaceTrackingのスタートボタン
 a.start-button {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
-}
-
-input[type="text"], input[type="password"] {
-  font-size: 16px;
 }
