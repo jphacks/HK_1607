@@ -1,6 +1,6 @@
 # e-mo
 ## 製品概要
-### e-Tech(education-Tech&e-Learning-Tech）
+### e-Tech(education&e-Learning&emotion-Tech）
 
 ### 背景（製品開発のきっかけ、課題等）
 e-moというのは、現状のe-Learningに__感情測定システム__と__DeepLearning__を組みこんだもので、  
