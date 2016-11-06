@@ -18,18 +18,18 @@ class TeachersController < ApplicationController
   def expression_data
     # サーバデバッグ用出力
     p "ログインID: #{params['userId']}"
-    p "スマイルデータ: #{params['smileData']}"
+    p "表情値: #{params['satisfaction']}"
     # 送信元のログインIDの取得
     userId = params["userId"]
     # 送信元の表情の値取得
-    smileData = params["smileData"]
+    satisfaction = params["satisfaction"]
 
     # user = User.find_by(login_id: userId)
     # 取得した値をDBに保存
-    UserExpression.create(user_id: User.find_by(login_id: userId).id, expression: smileData.to_i)
+    UserExpression.create(user_id: User.find_by(login_id: userId).id, expression: satisfaction.to_i)
 
     # 表情値が40未満の場合
-    if smileData.to_i < 40
+    if satisfaction.to_i < 40
       StudentWarningJob.perform_later(userId, "warning")
     # 表情値が40以上の場合
     else
