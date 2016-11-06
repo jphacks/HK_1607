@@ -1,4 +1,5 @@
 App.learning = App.cable.subscriptions.create "LearningChannel",
+
   connected: ->
     # Called when the subscription is ready for use on the server
 
@@ -13,6 +14,15 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
     if data["connected_count"] >= 0
       # 接続数を更新
       $(".connected-count").text(data["connected_count"])
+      return
+    # 生徒宛ての状態の通知だった場合
+    else if data["state"]
+      # 理解度が閾値を下がってる場合
+      if data["state"] == "warning"
+        $(".student-warning").fadeIn(1000)
+      # 理解度が閾値を上回っている場合
+      else if data["state"] == "info"
+        $(".student-warning").fadeOut()
       return
     # 受信データに理解度の値が含まれている場合
     else if data["expression_data"]
