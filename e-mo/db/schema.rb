@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161103072216) do
+ActiveRecord::Schema.define(version: 20161106023010) do
+
+  create_table "user_expressions", force: :cascade do |t|
+    t.integer  "expression"
+    t.binary   "face_img"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_user_expressions_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "login_id",                       null: false
@@ -24,5 +33,3 @@ ActiveRecord::Schema.define(version: 20161103072216) do
   end
 
 end
-end
-閉

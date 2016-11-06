@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expression: 1
+  face_img: 
+  user: one
+
+two:
+  expression: 1
+  face_img: 
+  user: two
