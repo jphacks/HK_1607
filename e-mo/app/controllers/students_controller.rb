@@ -5,6 +5,7 @@ class StudentsController < ApplicationController
   # GET /student
   # GET /
   def index
+    @login_id = current_user.login_id
   end
 
   private
