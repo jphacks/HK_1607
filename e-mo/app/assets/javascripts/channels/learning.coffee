@@ -58,7 +58,7 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
           for(key in expressionAsJson) cnt++;
           for(key in expressionAsJson) {
             if (cnt <= 20) break;
-            delete expressionAsJson[key]
+            delete jsons[key]
           }
           console.log(expressionAsJson);
           new Chartkick.LineChart("graph", jsons, {min: 0, max: 100});

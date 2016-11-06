@@ -81,7 +81,7 @@ class TeachersController < ApplicationController
     expression_json = { expression: expression }.to_json
 
     # TODO コメント
-    expression_averages = ExpressionAverage.order("id").limit(20)
+    expression_averages = ExpressionAverage.order("id DESC").limit(20)
     p expression_averages
     chart_data = {}
     i = 0
