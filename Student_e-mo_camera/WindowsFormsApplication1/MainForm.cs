@@ -776,7 +776,7 @@ namespace e_mo
                 //送るデータの作成
                 var dic = new Dictionary<string, string>();
                 dic["satisfaction"] = satisfaction.ToString();
-                dic["userId"] = Program.argData.ToString();
+                dic["userId"] = Program.argData;
                 Console.WriteLine(dic["satisfaction"] + ":" + dic["userId"]);
                 string param = "";
                 foreach (string key in dic.Keys) param += String.Format("{0}={1}&", key, dic[key]);
@@ -791,7 +791,7 @@ namespace e_mo
                 request.Method = "POST";
                 request.ContentType = "application/x-www-form-urlencoded";
                 request.CachePolicy = new HttpRequestCachePolicy(HttpRequestCacheLevel.NoCacheNoStore);
-                request.Timeout = 10000; // タイムアウトに10秒
+                request.Timeout = 5000; // タイムアウトに5秒
 
                 // 送信
                 // 非同期通信
@@ -800,9 +800,11 @@ namespace e_mo
                 Stream rs = request.GetRequestStream();
                 rs.Write(postData, 0, postData.Length);
                 HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-                //postData = null;
-                //GC.Collect(); // ガベージコレクション
-            } catch(Exception e) {
+                postData = null;
+                GC.Collect(); // ガベージコレクション
+            }
+            catch (Exception e)
+            {
                 UpdateStatus("サーバとの通信ができませんでした", Label.ReportLabel);
             }
         }

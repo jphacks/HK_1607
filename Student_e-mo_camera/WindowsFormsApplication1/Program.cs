@@ -28,7 +28,7 @@ namespace e_mo
                 string[] argwork = arg1.Split(':');
                 argData = argwork[1];
             }
-            argData = "s1234"; // LocalTest用
+            //argData = "s1234"; // LocalTest用
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
