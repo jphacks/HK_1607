@@ -141,7 +141,9 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 #### 期間中に開発した独自機能・技術
 
-* 
+カメラを使わない場合、C++ or C#が必要  
+intel Realsense SDKに合わせて  
+C＃でとった値をwebサーバに反映するWebSocketで使えるようにリアルタイムでデータを加工  
 
 
 
