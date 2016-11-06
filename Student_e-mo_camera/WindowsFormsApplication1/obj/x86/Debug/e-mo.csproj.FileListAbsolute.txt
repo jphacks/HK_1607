@@ -1,0 +1,30 @@
+c:\users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\bin\x86\Debug\libpxcclr.cs.dll
+c:\users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\x86\Debug\e_mo.Properties.Resources.resources
+c:\users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\x86\Debug\e-mo.csproj.GenerateResource.Cache
+C:\Users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\bin\x86\Debug\e_mo.exe.config
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject\WindowsFormsApplication1\bin\x86\Debug\e_mo.exe
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject\WindowsFormsApplication1\bin\x86\Debug\e_mo.pdb
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\x86\Debug\e_mo.exe
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\x86\Debug\e_mo.pdb
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\x86\Debug\e_mo.MainForm.resources
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\bin\x86\Debug\e_mo.exe.config
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\obj\x86\Debug\e_mo.exe
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\obj\x86\Debug\e_mo.pdb
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\bin\x86\Debug\e_mo.exe
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\bin\x86\Debug\e_mo.pdb
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\bin\x86\Debug\libpxcclr.cs.dll
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\obj\x86\Debug\e-mo.csprojResolveAssemblyReference.cache
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\obj\x86\Debug\e_mo.MainForm.resources
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\obj\x86\Debug\e_mo.Properties.Resources.resources
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject - コピー\WindowsFormsApplication1\obj\x86\Debug\e-mo.csproj.GenerateResource.Cache
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\bin\x86\Debug\e_mo.exe.config
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\obj\x86\Debug\e_mo.exe
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\obj\x86\Debug\e_mo.pdb
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\bin\x86\Debug\e_mo.exe
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\bin\x86\Debug\e_mo.pdb
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\bin\x86\Debug\libpxcclr.cs.dll
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\obj\x86\Debug\e-mo.csprojResolveAssemblyReference.cache
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\obj\x86\Debug\e_mo.MainForm.resources
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\obj\x86\Debug\e_mo.Properties.Resources.resources
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject Release\WindowsFormsApplication1\obj\x86\Debug\e-mo.csproj.GenerateResource.Cache
+C:\Users\muna1\Documents\Visual Studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\x86\Debug\e-mo.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+c:\users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\bin\Debug\e-mo.exe.config
+c:\users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\Debug\e-mo.csprojResolveAssemblyReference.cache
+c:\users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\Debug\e_mo.Properties.Resources.resources
+c:\users\muna1\documents\visual studio 2015\Projects\e-moProject\WindowsFormsApplication1\obj\Debug\e-mo.csproj.GenerateResource.Cache
