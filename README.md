@@ -88,7 +88,8 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 
 
-         C#  intel RealSense SDK
+         ・C#   
+         ・intel RealSense SDK 
 
 
 
@@ -98,7 +99,7 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 
 
-         Bootstrap
+         ・Bootstrap version3系
 
 
 
@@ -108,7 +109,9 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 
 
-         ruby on rails  postgreSQL  heroku  
+         ・ruby on rails 5.0.0.1  
+         ・postgreSQL  
+         ・heroku  
 
 
 
@@ -118,7 +121,7 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 
 
-         websocket
+         ・WebSocket  
 
 
 
