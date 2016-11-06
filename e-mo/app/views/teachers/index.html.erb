@@ -10,8 +10,8 @@
           <strong class="text-red connected-count" style="font-size: 24px">0</strong><strong class="text-red" style="font-size: 14px"> 人</strong>
         </div>
         <div class="media-heading">
-          <h3>理解度</h3>
-          <strong class="text-red expression-avg" style="font-size: 48px">80.3</strong><strong class="text-red" style="font-size: 14px">%</strong>
+          <h3>満足度</h3>
+          <strong class="text-red expression-avg" style="font-size: 48px">50.0</strong><strong class="text-red" style="font-size: 14px">%</strong>
         </div>
       </div>
       <div class="media-right">
@@ -19,7 +19,8 @@
       </div>
     </div>
 
-    <%= line_chart @chart_data, id: "graph", min: 0, max: 100, height: "210px", width: "100%" %>
+    <div id="graph"></div>
+    <!-- <%= line_chart @chart_data, id: "graph", min: 0, max: 100, height: "210px", width: "100%" %> -->
     <ul class="media-list scroll-box" id="messages"></ul>
   </div>
 </article>

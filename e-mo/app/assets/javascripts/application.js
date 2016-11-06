@@ -16,3 +16,12 @@
 //= require_tree .
 //= require bootstrap
 //= require chartkick
+
+// $(function() {
+  // try {
+    // 初期グラフ描写
+    // new Chartkick.LineChart("graph", {"2013-02-10 00:00:00 -0800": 11}, {min: 0, max: 100});
+  // } catch(e) {
+    // エラーキャッチ
+  // }
+// });

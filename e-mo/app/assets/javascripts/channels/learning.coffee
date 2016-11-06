@@ -29,7 +29,9 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
       # jsonオブジェクトに変換
       expressionAsJson = $.parseJSON(data["expression_data"])
       # 生徒の表情から算出した理解度の値取得
-      expression = parseInt(expressionAsJson.smile)
+      expression = parseInt(expressionAsJson.expression)
+      # 理解度の値の更新
+      $(".expression-avg").text(expression.toFixed(1))
 
       # 更新する顔画像のパス
       imgPath = "assets/"
@@ -46,8 +48,18 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
       # 顔画像を更新
       $(".expression-img").attr("src", imgPath)
 
-      # TODO グラフの更新
-      $(".expression-avg").text(expression.toFixed(1))
+      `
+        $(function() {
+          var cnt = 0;
+          for(key in expressionAsJson) cnt++;
+          for(key in expressionAsJson) {
+            if (cnt <= 20) break;
+            delete expressionAsJson[key]
+          }
+          console.log(expressionAsJson);
+          new Chartkick.LineChart("graph", expressionAsJson, {min: 0, max: 100});
+        });
+      `
       return
     # 受信メッセージが通常のチャットメッセージの場合
     else
