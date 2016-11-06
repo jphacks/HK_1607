@@ -134,7 +134,7 @@ DeepLearningに使用するTensorFlowが会場の通信環境では実行する�
 
 
 
-### 独自技術　//kondou
+### 独自技術　
 
 
 
