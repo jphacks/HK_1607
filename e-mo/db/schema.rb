@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161106023010) do
+ActiveRecord::Schema.define(version: 20161106041404) do
+
+  create_table "expression_averages", force: :cascade do |t|
+    t.float    "expression_avg"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "user_expressions", force: :cascade do |t|
     t.integer  "expression"

@@ -1,5 +1,6 @@
 App.learning = App.cable.subscriptions.create "LearningChannel",
 
+
   connected: ->
     # Called when the subscription is ready for use on the server
 
@@ -8,8 +9,10 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
 
   # Websocket通信でサーバから値を受信した時に動作
   received: (data) ->
+
     # デバック用
     console.log(data)
+    # console.log(@test)
     # 受信データに接続数が含まれている場合
     if data["connected_count"] >= 0
       # 接続数を更新
@@ -48,6 +51,7 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
       # 顔画像を更新
       $(".expression-img").attr("src", imgPath)
 
+      jsons = $.parseJSON(data["json"])
       `
         $(function() {
           var cnt = 0;
@@ -57,7 +61,7 @@ App.learning = App.cable.subscriptions.create "LearningChannel",
             delete expressionAsJson[key]
           }
           console.log(expressionAsJson);
-          new Chartkick.LineChart("graph", expressionAsJson, {min: 0, max: 100});
+          new Chartkick.LineChart("graph", jsons, {min: 0, max: 100});
         });
       `
       return

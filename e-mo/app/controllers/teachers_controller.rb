@@ -76,12 +76,27 @@ class TeachersController < ApplicationController
       sum += num
     end
     expression = sum / expressions.size
+    ExpressionAverage.create(expression_avg: expression)
     # 先生への送信用にJSONオブジェクトを生成
-    expression_json = {expression: expression}.to_json
+    expression_json = { expression: expression }.to_json
+
+    # TODO コメント
+    expression_averages = ExpressionAverage.order("id").limit(20)
+    p expression_averages
+    chart_data = {}
+    i = 0
+    expression_averages.each do |avg|
+      chart_data.store(i, avg.expression_avg)
+      i += 1
+    end
+
     # 理解度の値を先生宛てで送信
-    SendExpressionDataJob.perform_later(expression_json)
+    SendExpressionDataJob.perform_later(expression_json, chart_data.to_json)
+
     # 画面の生成、遷移が行われないためレスポンスコードのみ返す
     head 200
+
+    # render "index"
   end
 
   private
